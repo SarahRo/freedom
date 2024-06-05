@@ -1,7 +1,7 @@
 <?php
 $translate = $this->plugin('translate');
-$prevText = $translate('< Previous page');
-$nextText = $translate('Next page >');
+$prevText = '< '. $translate('Previous');
+$nextText = $translate('Next') . ' >';
 ?>
 <?php if ($prevPage || $nextPage): ?>
 <div class="site-page-pagination">

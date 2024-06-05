@@ -1,4 +1,5 @@
 <?php
+$translate = $this->plugin('translate');
 $this->headLink()->appendStylesheet($this->assetUrl('css/numeric-data-types.css', 'NumericDataTypes'));
 $this->headScript()->appendFile($this->assetUrl('js/numeric-data-types.js', 'NumericDataTypes'));
 ?>
@@ -10,13 +11,13 @@ $this->headScript()->appendFile($this->assetUrl('js/numeric-data-types.js', 'Num
     <?php echo $this->formHidden($element->getValueElement()); ?>
     <div class="numeric-datetime-inputs">
         <div class="numeric-date-inputs">
-            <label class="sub-label">Year
+            <label class="sub-label"><?php echo $translate('Year');?>
                 <?php echo $this->formNumber($element->getYearElement()); ?>
             </label>
-            <label class="sub-label">Month
+            <label class="sub-label"><?php echo $translate('Month');?>
                 <?php echo $this->formSelect($element->getMonthElement()); ?>
             </label>
-            <label class="sub-label">Day
+            <label class="sub-label"><?php echo $translate('Day');?>
                 <?php echo $this->formSelect($element->getDayElement()); ?>
             </label>
             <label class="numeric-toggle-time button" aria-title="<?php echo $this->translate('Time'); ?>" title="<?php echo $this->translate('Time'); ?>"><input type="checkbox" name="numeric-toggle-time-checkbox"/></label>

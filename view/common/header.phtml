@@ -1,9 +1,14 @@
+<?php
+$translate = $this->plugin('translate');
+$hyperlink = $this->plugin('hyperlink');
+
+?>
 <header class="main-header">
 
 	<?php echo $userBar; ?>
 
 	<div class="main-header__top-bar container">
-		<a class="main-header__advanced-search" href="<?php echo $site->url() . '/item/search'; ?>">Advanced Search</a>
+	<?php echo $this->hyperlink($translate('Advanced search'), $this->url('site/resource', ['controller' => 'item', 'action' => 'search'], ['query' => NULL], true), ['class' => 'advanced-search']); ?>	
 		<div class="main-header__search-form">
 			<?php echo $this->partial('common/search-form'); ?>
 		</div>
