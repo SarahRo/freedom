@@ -54,7 +54,7 @@ if ($this->status()->isSiteRequest()) {
                     <option value="not_in"<?php echo 'not_in' === $itemSet['type'] ? ' selected' : ''; ?>><?php echo $translate('Not in'); ?></option>
                 </select>
             </label>
-	    <label class="sub-label"><?php echo $translate("Item Set");?>
+            <label class="sub-label"><?php echo $translate('Item Set');?>
                 <?php echo $this->itemSetSelect([
                     'name' => ('not_in' === $itemSet['type']) ? 'not_item_set_id[]' : 'item_set_id[]',
                     'attributes' => [
