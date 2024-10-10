@@ -23,16 +23,16 @@ $this->headScript()->appendFile($this->assetUrl('js/numeric-data-types.js', 'Num
             <label class="numeric-toggle-time button" aria-title="<?php echo $this->translate('Time'); ?>" title="<?php echo $this->translate('Time'); ?>"><input type="checkbox" name="numeric-toggle-time-checkbox"/></label>
         </div>
         <div class="numeric-time-inputs">
-            <label class="sub-label">Hour
+            <label class="sub-label"><?php echo $translate('Hour');?>
                 <?php echo $this->formSelect($element->getHourElement()); ?>
             </label>
-            <label class="sub-label">Minute
+            <label class="sub-label"><?php echo $translate('Minute');?>
                 <?php echo $this->formSelect($element->getMinuteElement()); ?>
             </label>
-            <label class="sub-label">Second
+            <label class="sub-label"><?php echo $translate('Sekunde');?>
                 <?php echo $this->formSelect($element->getSecondElement()); ?>
             </label>
-            <label class="sub-label">Offset
+            <label class="sub-label"><?php echo $translate('Offset');?>
                 <?php echo $this->formSelect($element->getOffsetElement()); ?>
             </label>
         </div>

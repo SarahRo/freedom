@@ -24,13 +24,13 @@ $this->headScript()->appendFile($this->assetUrl('js/numeric-data-types.js', 'Num
             <label class="numeric-toggle-time button" aria-title="<?php echo $this->translate('Time'); ?>" title="<?php echo $this->translate('Time'); ?>"><input type="checkbox" name="numeric-toggle-time-checkbox"/></label>
         </div>
         <div class="numeric-time-inputs">
-            <label class="sub-label">Hours
+            <label class="sub-label"><?php echo $translate('Hours');?>
                 <?php echo $this->formNumber($element->getHoursElement()); ?>
             </label>
-            <label class="sub-label">Minutes
+            <label class="sub-label"><?php echo $translate('Minutes');?>
                 <?php echo $this->formNumber($element->getMinutesElement()); ?>
             </label>
-            <label class="sub-label">Seconds
+            <label class="sub-label"><?php echo $translate('Seconds');?>
                 <?php echo $this->formNumber($element->getSecondsElement()); ?>
             </label>
         </div>

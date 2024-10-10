@@ -82,7 +82,6 @@ if ($this->status()->isSiteRequest()) {
                 ]
                 ]
             ); ?>
-            <label class="sub-label" for="<?php echo $this->escapeHtml($stem . '[type]'); ?>"><?php echo $translate('Query type');?></label>
             <select class="query-type sub-field" name="<?php echo $this->escapeHtml($stem . '[type]'); ?>" aria-label="<?php echo $translate('Query type'); ?>">
                 <?php echo $queryOption('eq', $property, 'type', $translate('is exactly')); ?>
                 <?php echo $queryOption('neq', $property, 'type', $translate('is not exactly')); ?>
